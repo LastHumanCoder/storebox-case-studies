@@ -7,35 +7,39 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--brand:#F2570C;--accent-50:#FFF1E2;--ink:#17120D;--ink2:#514B43;--ink3:#8A8178;--surface:#FAF7F2;--paper:#fff;--line:#EFE6DA;--line2:#E2D7C6;--fh:'Plus Jakarta Sans',system-ui,sans-serif;--fb:'Inter',system-ui,sans-serif}
+:root{--brand:#F2570C;--accent-50:#FFF1E2;--ink:#17120D;--ink2:#514B43;--ink3:#8A8178;--surface:#FAF7F2;--paper:#fff;--line:#EFE6DA;--line2:#E2D7C6;--green:#0FA966;--fh:'Plus Jakarta Sans',system-ui,sans-serif;--fb:'Inter',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--surface);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:900px;margin:0 auto;padding:0 20px}
-.head{padding:56px 0 10px;text-align:center}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.head{padding:60px 0 12px;text-align:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);background:var(--accent-50);border:1px solid #FBD9BE;padding:6px 13px;border-radius:999px}
-h1{font-family:var(--fh);font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,5vw,44px);margin:16px 0 12px}
-.head p{color:var(--ink2);max-width:600px;margin:0 auto}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:34px 0 60px}
-@media(max-width:640px){.grid{grid-template-columns:1fr}}
-.card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(23,18,13,.1)}
-.card .k{font-family:var(--fh);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
-.card h2{font-family:var(--fh);font-weight:800;font-size:20px;letter-spacing:-.02em;margin:8px 0 6px;color:var(--ink)}
-.card p{font-size:14.5px;color:var(--ink2);margin:0 0 12px}
+h1{font-family:var(--fh);font-weight:800;letter-spacing:-.03em;font-size:clamp(30px,5vw,46px);margin:16px 0 12px}
+.head p{color:var(--ink2);max-width:620px;margin:0 auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:36px 0 70px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+.card{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(23,18,13,.1);border-color:var(--line2)}
+.card .k{font-family:var(--fh);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.card h2{font-family:var(--fh);font-weight:800;font-size:20px;letter-spacing:-.02em;margin:8px 0 8px;color:var(--ink);line-height:1.2}
+.card p{font-size:14.5px;color:var(--ink2);margin:0 0 16px;flex:1}
 .card .go{display:inline-flex;align-items:center;gap:6px;font-family:var(--fh);font-weight:700;font-size:14px;color:var(--brand)}
-.soon{opacity:.55;pointer-events:none}
 .note{text-align:center;color:var(--ink3);font-size:13px;padding-bottom:50px}
 </style></head><body>
 <div class="wrap">
 <div class="head">
 <span class="eyebrow">Storebox · case studies</span>
 <h1>Real results, straight from Search Console</h1>
-<p>How businesses get found across Google and AI answers with done-for-you Storebox SEO and AEO. Every number comes from the client's live Google Search Console.</p>
+<p>How businesses get found across Google and AI answers with done-for-you Storebox SEO and AEO. Every number comes from the client's live Google Search Console. Client names withheld for confidentiality.</p>
 </div>
 <div class="grid">
-<a class="card" href="law-firm.html"><span class="k">Law firm · India</span><h2>Source for Google's AI Overviews in 30 days</h2><p>374 searches on page 1, cited in an AI answer within 2 weeks.</p><span class="go">Read case study →</span></a>
-<span class="card soon"><span class="k">More coming</span><h2>Ecommerce, hotels, travel &amp; more</h2><p>Additional case studies are being prepared.</p><span class="go">Soon</span></span>
+<a class="card" href="law-firm.html"><span class="k">Law firm · India</span><h2>A source for Google's AI Overviews in 30 days</h2><p>374 searches on page 1, and a guide cited in an AI answer within two weeks.</p><span class="go">Read case study →</span></a>
+<a class="card" href="ecommerce.html"><span class="k">Online clothing brand · India</span><h2>Recommended by Google's AI next to Uniqlo &amp; H&amp;M</h2><p>Impressions and clicks doubled in two months; named in three AI Overviews.</p><span class="go">Read case study →</span></a>
+<a class="card" href="hotel.html"><span class="k">Two independent hotels</span><h2>Winning Google searches and AI answers</h2><p>678 non-brand searches on page 1 for the motel; the boutique hotel listed #2 in an AI Overview.</p><span class="go">Read case study →</span></a>
+<a class="card" href="local-seo.html"><span class="k">Personal training studio</span><h2>Outranking the national gym chains locally</h2><p>#1 for "personal trainer near me"; 161 searches on page 1 against Crunch, Planet Fitness and more.</p><span class="go">Read case study →</span></a>
+<a class="card" href="electronics.html"><span class="k">Electronics retailer · India</span><h2>6.8&times; more clicks from Google in six months</h2><p>11.5&times; more impressions, and the store shown in 23 AI Overviews.</p><span class="go">Read case study →</span></a>
+<a class="card" href="speed.html"><span class="k">Two travel agencies</span><h2>Published, indexed, ranked and AI-cited in days</h2><p>An AI Overview citation two days after publishing; 22 pages on page 1 within nine days.</p><span class="go">Read case study →</span></a>
+<a class="card" href="travel-hospitality.html"><span class="k">Three travel &amp; hospitality clients</span><h2>Month-by-month growth with Storebox</h2><p>1,079 searches on page 1 across the three clients, with impressions compounding monthly.</p><span class="go">Read case study →</span></a>
 </div>
-<p class="note">Draft · not indexed. Client names withheld for confidentiality.</p>
+<p class="note">Draft · not indexed. Prepared by Storebox · storebox.ai</p>
 </div>
 </body></html>
