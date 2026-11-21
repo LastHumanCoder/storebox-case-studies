@@ -1,38 +1,36 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Law Firm Case Study · Storebox</title>
-<meta name="description" content="How Storebox took a multi-city law firm from a new site to a source for Google's AI Overviews in 30 days: 374 searches on page 1, cited in an AI answer within 2 weeks.">
+<title>Law Firm Case Study: A Source for Google's AI Overviews in 30 Days · Storebox</title>
+<meta name="description" content="How Storebox took a multi-city law firm from a new site to a source for Google's AI Overviews in 30 days: 374 searches on page 1 and a guide cited in an AI answer within two weeks.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#FAF7F2">
+<meta property="og:title" content="Law Firm Case Study: A Source for Google's AI Overviews in 30 Days"><meta property="og:description" content="How Storebox took a multi-city law firm from a new site to a source for Google's AI Overviews in 30 days: 374 searches on page 1 and a guide cited in an AI answer within two weeks."><meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
+<style>:root{
  --brand:#F2570C;--brand-dark:#A93C08;--brand-rgb:242,87,12;
  --accent:#FDBA74;--accent-50:#FFF1E2;
  --ink:#17120D;--ink2:#514B43;--ink3:#8A8178;
  --surface:#FAF7F2;--surface-alt:#F5EEE4;--paper:#fff;--line:#EFE6DA;--line2:#E2D7C6;
  --green:#0FA966;--green-50:#E4F6EE;
  --fh:'Plus Jakarta Sans',system-ui,sans-serif;--fb:'Inter',system-ui,sans-serif;
- --r:20px;--maxw:860px;--gut:16px;
+ --r:20px;--gut:16px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{background:var(--surface);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img,svg{display:block}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
 h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.02em;line-height:1.12}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
 @media(min-width:720px){:root{--gut:28px}}
 .art p{margin:14px 0;color:var(--ink2)}
 .art h2{font-size:clamp(25px,4.6vw,34px);margin:44px 0 6px;color:var(--ink)}
-.art h2 .sub{display:block;font-family:var(--fb);font-weight:500;font-size:15.5px;color:var(--ink3);letter-spacing:0;margin-top:8px}
 .art h3{font-size:clamp(19px,3.4vw,23px);margin:30px 0 8px}
 .ic{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-/* nav */
+/* nav (standalone only; stripped for CMS) */
 .nav{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px;max-width:1180px;margin:0 auto;padding:0 var(--gut)}
-.brand{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-weight:800;font-size:21px;letter-spacing:-.02em;color:var(--ink)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px;max-width:1160px;margin:0 auto;padding:0 var(--gut)}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-weight:800;font-size:21px;color:var(--ink)}
 .brand img{height:26px;width:auto}
 .nav-links{display:none;gap:24px;font-weight:600;font-size:15px;color:var(--ink2)}
 .nav-links a:hover{color:var(--brand)}
@@ -40,26 +38,28 @@ h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.02em;line-hei
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;font-family:var(--fh);font-weight:700;font-size:15.5px;padding:12px 20px;border-radius:999px;background:var(--brand);color:#fff;transition:transform .2s,box-shadow .2s;white-space:nowrap}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(var(--brand-rgb),.34)}
 .btn.ghost{background:var(--paper);color:var(--ink);border:1px solid var(--line2)}
-.btn.ghost:hover{box-shadow:0 10px 22px rgba(23,18,13,.1)}
 .nav .btn{padding:9px 17px;font-size:14.5px}
+
+/* two-column shell: article + sticky right CTA */
+.shell{max-width:1180px;margin:0 auto;padding:0 var(--gut);display:block}
+@media(min-width:1080px){.shell{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:46px;align-items:start}}
 
 /* hero */
 .hero{padding:34px 0 4px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);background:var(--accent-50);border:1px solid #FBD9BE;padding:6px 13px;border-radius:999px}
-.hero h1{font-size:clamp(31px,6vw,48px);letter-spacing:-.035em;line-height:1.04;margin:16px 0 14px}
+.hero h1{font-size:clamp(30px,5.2vw,44px);letter-spacing:-.03em;line-height:1.05;margin:16px 0 14px}
 .hero .meta{font-size:14.5px;color:var(--ink3);font-weight:600;font-family:var(--fh)}
 .hero .meta b{color:var(--brand)}
 
 /* stat tiles */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0 8px}
-@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:26px 0 8px}
+@media(min-width:560px){.stats{grid-template-columns:repeat(4,1fr)}}
 .stat{position:relative;overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 16px;box-shadow:0 8px 22px rgba(23,18,13,.04)}
 .stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--brand)}
 .stat.g::before{background:var(--green)}
-.stat b{position:relative;display:block;font-family:var(--fh);font-size:clamp(26px,4vw,34px);letter-spacing:-.03em;line-height:1;color:var(--brand)}
-.stat.g b{color:var(--green)}
-.stat.ink b{color:var(--ink)}
-.stat span{position:relative;display:block;margin-top:8px;font-size:13px;color:var(--ink2);font-weight:500;line-height:1.35}
+.stat b{position:relative;display:block;font-family:var(--fh);font-size:clamp(25px,3.6vw,33px);letter-spacing:-.03em;line-height:1;color:var(--brand)}
+.stat.g b{color:var(--green)}.stat.ink b{color:var(--ink)}
+.stat span{position:relative;display:block;margin-top:8px;font-size:12.5px;color:var(--ink2);font-weight:500;line-height:1.35}
 
 /* callout */
 .note{border:1px solid var(--line);border-left:4px solid var(--brand);background:var(--surface-alt);border-radius:12px;padding:16px 18px;margin:22px 0;font-size:15.5px;color:var(--ink2)}
@@ -74,8 +74,8 @@ h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.02em;line-hei
 .case-head .meta{font-size:14.5px;color:var(--ink3)}
 
 /* steps */
-.steps{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0 6px}
-@media(max-width:620px){.steps{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:1fr;gap:14px;margin:20px 0 6px}
+@media(min-width:620px){.steps{grid-template-columns:1fr 1fr}}
 .step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 16px;box-shadow:0 8px 20px rgba(23,18,13,.04);transition:transform .2s,box-shadow .2s}
 .step:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(23,18,13,.1)}
 .step .n{width:38px;height:38px;border-radius:11px;background:var(--brand);color:#fff;display:grid;place-items:center;font-family:var(--fh);font-weight:800;font-size:17px;margin-bottom:11px}
@@ -87,31 +87,29 @@ h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.02em;line-hei
 .chart .ct{font-family:var(--fh);font-weight:800;font-size:17px}
 .chart .cs{font-size:13px;color:var(--ink3);margin:4px 0 18px}
 .chart .src{font-size:12px;color:var(--ink3);margin-top:16px}
-/* column chart */
 .cols{display:flex;align-items:flex-end;gap:10px;height:200px;padding-top:24px}
 .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
-.col .bar{width:100%;max-width:74px;border-radius:9px 9px 4px 4px;background:linear-gradient(180deg,var(--brand),#F7853F);box-shadow:0 3px 10px rgba(var(--brand-rgb),.28);position:relative;animation:rise 1s cubic-bezier(.22,1,.36,1) both}
+.col .cbar{width:100%;max-width:70px;border-radius:9px 9px 4px 4px;background:linear-gradient(180deg,var(--brand),#F7853F);box-shadow:0 3px 10px rgba(var(--brand-rgb),.28);position:relative;animation:rise 1s cubic-bezier(.22,1,.36,1) both}
 @keyframes rise{from{height:0!important}}
-.col .v{position:absolute;top:-22px;left:0;right:0;text-align:center;font-family:var(--fh);font-weight:800;font-size:14px;color:var(--ink)}
+.col .v{position:absolute;top:-22px;left:0;right:0;text-align:center;font-family:var(--fh);font-weight:800;font-size:13.5px;color:var(--ink)}
 .col.hi .v{color:var(--brand)}
-.col .lab{margin-top:10px;font-family:var(--fh);font-weight:700;font-size:12.5px;text-align:center}
-.col .lab small{display:block;font-weight:500;color:var(--ink3);font-size:11px;margin-top:1px}
-/* bar chart */
+.col .lab{margin-top:10px;font-family:var(--fh);font-weight:700;font-size:12px;text-align:center}
+.col .lab small{display:block;font-weight:500;color:var(--ink3);font-size:10.5px;margin-top:1px}
 .bars{display:grid;gap:12px}
-.bar{display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:12px;font-size:13.5px;font-weight:600;color:var(--ink2)}
-@media(max-width:620px){.bar{grid-template-columns:120px 1fr auto;gap:8px;font-size:12.5px}}
+.bar{display:grid;grid-template-columns:140px 1fr auto;align-items:center;gap:12px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+@media(max-width:620px){.bar{grid-template-columns:108px 1fr auto;gap:8px;font-size:12.5px}}
 .bar .track{height:18px;border-radius:999px;background:rgba(23,18,13,.06);overflow:hidden}
 .bar .fill{width:var(--w);height:100%;border-radius:999px;background:linear-gradient(90deg,var(--brand),#F7853F);box-shadow:0 2px 8px rgba(var(--brand-rgb),.3);animation:grow 1.1s cubic-bezier(.22,1,.36,1) both}
 @keyframes grow{from{width:0}}
 .bar .val{display:flex;align-items:center;gap:8px;justify-content:flex-end}
-.bar .num{font-family:var(--fh);font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;min-width:48px;text-align:right}
+.bar .num{font-family:var(--fh);font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;min-width:46px;text-align:right}
 .bar .pos{font-family:var(--fh);font-weight:800;font-size:11px;color:var(--green);background:var(--green-50);padding:3px 8px;border-radius:999px;white-space:nowrap}
 
 /* rank chips */
-.ranks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0 6px}
-@media(max-width:620px){.ranks{grid-template-columns:1fr}}
+.ranks{display:grid;grid-template-columns:1fr;gap:12px;margin:20px 0 6px}
+@media(min-width:620px){.ranks{grid-template-columns:1fr 1fr}}
 .rank{display:flex;align-items:center;gap:13px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:13px 14px;box-shadow:0 8px 20px rgba(23,18,13,.04)}
-.rank .pos{flex:none;min-width:58px;text-align:center;background:var(--green);color:#fff;font-family:var(--fh);font-weight:800;font-size:18px;border-radius:10px;padding:8px 6px;line-height:1}
+.rank .pos{flex:none;min-width:56px;text-align:center;background:var(--green);color:#fff;font-family:var(--fh);font-weight:800;font-size:18px;border-radius:10px;padding:8px 6px;line-height:1}
 .rank .pos small{display:block;font-size:8.5px;font-weight:700;letter-spacing:.6px;opacity:.9;margin-top:3px}
 .rank .kw{font-family:var(--fh);font-weight:700;font-size:15px}
 .rank .why{font-size:12.5px;color:var(--ink3);margin-top:2px;line-height:1.35}
@@ -124,57 +122,52 @@ h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.02em;line-hei
 .shot img{width:100%;height:auto}
 .shot .cap{padding:11px 16px;font-size:13px;color:var(--ink2);border-top:1px solid var(--line);background:var(--surface)}
 .shot .cap b{color:var(--ink)}
-.shot-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
-@media(max-width:720px){.shot-grid{grid-template-columns:1fr}}
+.shot-grid{display:grid;grid-template-columns:1fr;gap:16px;margin:20px 0}
+@media(min-width:720px){.shot-grid{grid-template-columns:1fr 1fr}}
 .shot-grid .shot{margin:0}
 .mini3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
-.mini{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px 14px;text-align:center}
-.mini b{display:block;font-family:var(--fh);font-weight:800;font-size:22px;color:var(--brand);letter-spacing:-.02em}
-.mini span{display:block;font-size:12.5px;color:var(--ink3);margin-top:5px;line-height:1.35}
+.mini{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px 12px;text-align:center}
+.mini b{display:block;font-family:var(--fh);font-weight:800;font-size:21px;color:var(--brand);letter-spacing:-.02em}
+.mini span{display:block;font-size:12px;color:var(--ink3);margin-top:5px;line-height:1.35}
+
+/* BIG sticky right CTA */
+.side{margin:34px 0 0}
+@media(min-width:1080px){.side{position:sticky;top:82px;margin:34px 0 0}}
+.side-card{background:linear-gradient(165deg,#241711,#15100B);color:#fff;border-radius:24px;padding:28px 24px;box-shadow:0 22px 50px rgba(23,18,13,.26)}
+.side-card .slogo{display:inline-block;background:#fff;border-radius:11px;padding:8px 12px;margin-bottom:18px}
+.side-card .slogo img{height:22px;width:auto}
+.side-card .sh{font-family:var(--fh);font-weight:800;font-size:25px;line-height:1.12;letter-spacing:-.02em;margin-bottom:10px}
+.side-card p{font-size:14px;color:rgba(255,255,255,.76);line-height:1.55;margin:0 0 16px}
+.side-card ul{list-style:none;margin:0 0 20px}
+.side-card li{position:relative;padding-left:24px;margin:10px 0;font-size:14px;font-weight:600;color:#F4EFE6}
+.side-card li::before{content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;background:var(--brand)}
+.side-card li::after{content:"";position:absolute;left:5px;top:8px;width:5px;height:8px;border:2px solid #fff;border-top:0;border-left:0;transform:rotate(42deg)}
+.side-card .btn{width:100%;font-size:16px;padding:15px 20px}
+.side-card .sfoot{display:block;text-align:center;font-size:12.5px;color:rgba(255,255,255,.62);margin-top:12px;font-weight:600}
 
 /* final CTA */
-.finalcta{background:linear-gradient(135deg,#1B140E,#2A1C10);color:#fff;border-radius:28px;padding:34px 24px;margin:40px 0 10px;text-align:center}
-@media(min-width:720px){.finalcta{padding:44px 40px}}
+.finalcta{background:linear-gradient(135deg,#1B140E,#2A1C10);color:#fff;border-radius:28px;padding:34px 24px;margin:40px auto 10px;text-align:center;max-width:1180px}
+@media(min-width:720px){.finalcta{padding:46px 40px}}
 .finalcta .k{font-family:var(--fh);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.finalcta h2{color:#fff;font-size:clamp(25px,4.4vw,34px);margin:10px 0 10px}
-.finalcta p{color:rgba(255,255,255,.76);margin:0 auto 20px;max-width:520px}
-.finalcta .btn{background:var(--brand);font-size:16px;padding:14px 26px}
+.finalcta h2{color:#fff;font-size:clamp(25px,4.4vw,36px);margin:10px 0 10px}
+.finalcta p{color:rgba(255,255,255,.76);margin:0 auto 20px;max-width:540px}
+.finalcta .btn{font-size:16px;padding:14px 26px}
 .finalcta .row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 
 footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid var(--line);margin-top:30px}
-.foot{display:flex;flex-direction:column;gap:12px}
-@media(min-width:720px){.foot{flex-direction:row;justify-content:space-between;align-items:center}}
-.foot nav{display:flex;flex-wrap:wrap;gap:18px;font-weight:600}
-.foot nav a:hover{color:var(--brand)}
+.foot-in{max-width:1180px;margin:0 auto;padding:0 var(--gut);display:flex;flex-direction:column;gap:12px}
+@media(min-width:720px){.foot-top{display:flex;justify-content:space-between;align-items:center}}
+.foot-in nav{display:flex;flex-wrap:wrap;gap:18px;font-weight:600}
+.foot-in nav a:hover{color:var(--brand)}
 .disc{font-size:12.5px;color:var(--ink3);margin-top:12px;line-height:1.5}
-
-/* sticky side CTA */
-.side-cta{position:fixed;left:max(16px,calc(50% - 612px));top:50%;transform:translateY(-50%);z-index:40;display:none;width:162px;background:var(--paper);border:1px solid var(--line2);border-radius:18px;padding:16px 15px;box-shadow:0 18px 40px rgba(23,18,13,.14);transition:opacity .25s,visibility .25s}
-@media(min-width:1260px){.side-cta{display:block}}
-.side-cta.gone{opacity:0;visibility:hidden;pointer-events:none}
-.side-cta .k{font-family:var(--fh);font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)}
-.side-cta .h{font-family:var(--fh);font-weight:800;font-size:16px;line-height:1.2;margin:8px 0 6px;color:var(--ink)}
-.side-cta p{font-size:12.5px;color:var(--ink3);margin:0 0 12px;line-height:1.4}
-.side-cta .btn{width:100%;padding:11px 10px;font-size:14px}
-.side-cta .sub{display:block;text-align:center;font-size:11px;color:var(--ink3);margin-top:8px;font-weight:600}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style></head><body>
-
 <header class="nav"><div class="nav-in">
 <a class="brand" href="https://storebox.ai" aria-label="Storebox"><img src="assets/storebox-logo.png" alt="Storebox AI"></a>
 <nav class="nav-links" aria-label="Main"><a href="#work">What we did</a><a href="#results">Results</a><a href="#how">How it works</a></nav>
 <a class="btn" href="https://storebox.ai/contact">Get a free growth plan</a></div></header>
-
-<aside class="side-cta" aria-label="Get started with Storebox">
-<div class="k">Storebox</div>
-<div class="h">Your firm could be next</div>
-<p>Done-for-you SEO &amp; AEO. Plans from $100/mo, no contracts.</p>
-<a class="btn" href="https://storebox.ai/contact">Get a free plan</a>
-<span class="sub">See your firm in AI answers</span>
-</aside>
-
-<main class="wrap art">
-
+<div class="shell">
+<main class="art">
 <section class="hero">
 <span class="eyebrow">Law firm case study</span>
 <h1>From a new site to a source for Google's AI Overviews in 30 days.</h1>
@@ -211,11 +204,11 @@ People research legal problems before they call a lawyer. More and more, the fir
  <div class="ct">Total Google impressions, first 30 days</div>
  <div class="cs">Google Search Console running total from the site's first day of data.</div>
  <div class="cols">
-  <div class="col"><div class="bar" style="height:7%"><span class="v">413</span></div><div class="lab">Week 1<small>by Oct 6</small></div></div>
-  <div class="col"><div class="bar" style="height:53%"><span class="v">3,298</span></div><div class="lab">Week 2<small>by Oct 13</small></div></div>
-  <div class="col"><div class="bar" style="height:61%"><span class="v">3,786</span></div><div class="lab">Week 3<small>by Oct 20</small></div></div>
-  <div class="col"><div class="bar" style="height:88%"><span class="v">5,437</span></div><div class="lab">Week 4<small>by Oct 27</small></div></div>
-  <div class="col hi"><div class="bar" style="height:100%"><span class="v">6,187</span></div><div class="lab">Day 30<small>by Oct 29</small></div></div>
+  <div class="col"><div class="cbar" style="height:7%"><span class="v">413</span></div><div class="lab">Week 1<small>by Oct 6</small></div></div>
+  <div class="col"><div class="cbar" style="height:53%"><span class="v">3,298</span></div><div class="lab">Week 2<small>by Oct 13</small></div></div>
+  <div class="col"><div class="cbar" style="height:61%"><span class="v">3,786</span></div><div class="lab">Week 3<small>by Oct 20</small></div></div>
+  <div class="col"><div class="cbar" style="height:88%"><span class="v">5,437</span></div><div class="lab">Week 4<small>by Oct 27</small></div></div>
+  <div class="col hi"><div class="cbar" style="height:100%"><span class="v">6,187</span></div><div class="lab">Day 30<small>by Oct 29</small></div></div>
  </div>
  <div class="src">The last 7 days had 2,149 impressions, 5.2&times; the first 7 days (413).</div>
 </div>
@@ -289,26 +282,30 @@ People research legal problems before they call a lawyer. More and more, the fir
  <div class="step"><div class="n">3</div><div class="t">A page for every practice and city</div><div class="d">So the firm ranks for "[practice] lawyer" searches in each city it serves.</div></div>
  <div class="step"><div class="n">4</div><div class="t">Fast and done for you</div><div class="d">Content goes live, gets indexed and ranks within days. No work needed from your lawyers.</div></div>
 </div>
-
 </main>
-
-<section class="finalcta wrap" id="plan" style="max-width:860px">
+<aside class="side" aria-label="Get started with Storebox">
+ <div class="side-card">
+  <span class="slogo"><img src="assets/storebox-logo.png" alt="Storebox AI"></span>
+  <div class="sh">Your firm could be the next case study.</div>
+  <p>Done-for-you SEO &amp; AEO. We claim the questions your customers ask and get your firm into Google and AI answers.</p>
+  <ul><li>Pages for every service &amp; city</li><li>Content built for AI Overviews</li><li>Live Search Console reporting</li></ul>
+  <a class="btn" href="https://storebox.ai/contact">Get a free growth plan</a>
+  <span class="sfoot">Plans from $100/mo · no contracts</span>
+ </div>
+</aside>
+</div>
+<section class="finalcta" id="plan">
  <div class="k">Done-for-you SEO &amp; AEO</div>
  <h2>Your firm could be the next case study.</h2>
- <p>Plans from $100/month. No contracts. We claim the questions your clients ask, and get your firm into the answer.</p>
+ <p>Plans from $100/month. No contracts. We claim the questions your customers ask, and get your firm into the answer.</p>
  <div class="row">
   <a class="btn" href="https://storebox.ai/contact">Get a free growth plan</a>
   <a class="btn ghost" href="https://storebox.ai">storebox.ai</a>
  </div>
 </section>
-
-<footer><div class="wrap foot">
+<footer><div class="foot-in">
+<div class="foot-top">
 <a class="brand" href="https://storebox.ai" style="font-size:18px"><img src="assets/storebox-logo.png" alt="Storebox AI" style="height:22px"></a>
 <nav><a href="https://storebox.ai">storebox.ai</a><a href="#results">Results</a><a href="https://storebox.ai/contact">Get started</a></nav></div>
-<div class="wrap"><p class="disc">Storebox helps businesses get found across Google, ChatGPT and other AI assistants with done-for-you SEO and AEO. Figures come from the client's Google Search Console. Client name withheld for confidentiality.</p></div></footer>
-
-<script>(function(){var s=document.querySelector('.side-cta');
-if(s&&'IntersectionObserver' in window){var vis=new Set();
-var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?vis.add(e.target):vis.delete(e.target)});s.classList.toggle('gone',vis.size>0);},{rootMargin:'-40% 0px -40% 0px'});
-document.querySelectorAll('.finalcta,footer').forEach(function(el){io.observe(el)});}})();</script>
+<p class="disc">Storebox helps businesses get found across Google, ChatGPT and other AI assistants with done-for-you SEO and AEO. Figures come from the client's Google Search Console. Client name withheld for confidentiality.</p></div></footer>
 </body></html>
